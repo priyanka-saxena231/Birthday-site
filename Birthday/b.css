@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+
+
+section.home {
+
+    height: 96vh;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    width : 90px;
+}
+
+
+
+.ballon {
+    position: sticky;
+    position: left;
+    height: 189px;
+    top: 25px;
+    right: 33px;
+    width: 252px;
+}
+
+.container{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+border-color: #2577da;
+align-items: center;
+}
+/*1f6fd1*/
+.Birth-day-card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  /* background: linear-gradient(to top,#4481eb 0%, #04befe 100%); */
+  /* background: linear-gradient(111.5deg,rgb(20, 100, 196) 0.4%, rgb(33, 152, 214) 100.2%); */
+  background: linear-gradient(111.8deg, rgb(0, 104, 155) 19.8%, rgb(0, 173, 239) 92.1%);
+
+  overflow: hidden;
+  border:10px solid white;
+  border-radius:10px;
+  box-shadow: 0 0 100px rgba(0,0,0,.4);
+}
+
+.Birth-day-card:before {
+  content:"";
+  position: absolute;
+  background-color:#197af0;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  top:140px;
+  left:-25px;
+  box-shadow:60px 20px #096fec,130px 10px #1377f0, 190px 20px #096fec,260px -5px #1377f0, 340px 20px #096fec;
+}
+
+.Birth-day-card:after {
+  content:"";
+  position: absolute;
+  background-color: #428de9;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  top:160px;
+  left:-40px;
+  box-shadow: 50px 20px #589df1,120px 40px #428de9, 200px 15px #589df1,260px 30px #428de9, 330px 30px #589df1,380px 10px #428de9;
+}
+
+.clouds {
+  position: absolute;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color: #e2ebf5;
+  z-index:5;
+  top:210px;
+  left:-20px;
+  box-shadow: 55px 30px #d9e4ec, 125px 10px #e2ebf5,175px 20px #d9e4ec, 250px 10px #e2ebf5, 320px 5px #d9e4ec, 380px 10px #e2ebf5;
+}
+
+.hearts {
+  position: absolute;
+  z-index:2;
+}
+
+.heartOne {
+  position: absolute;
+  left:100px;
+  top:250px;
+  animation: up 4s linear forwards 1s;
+}
+
+.heartTwo {
+  position: absolute;
+  left:270px;
+  top:230px;
+  animation: up 5s linear forwards 1.8s;
+}
+
+.heartThree {
+  position: absolute;
+  left:85px;
+  top:415px;
+  animation: up 5s linear forwards 3s;
+}
+
+.heartFour {
+  position: absolute;
+  left:320px;
+  top:380px;
+  animation: upTwo 9s linear infinite 3.5s;
+}
+
+.heartFive {
+  position: absolute;
+  left:150px;
+  top:400px;
+  animation: upTwo 13s linear infinite 4.5s;
+}
+
+.right-side:before, .right-side:after {
+  position: absolute;
+  content:"";
+  transform-origin: left;
+  animation: move 1s ease infinite;
+}
+
+.right-side:before {
+  border-radius:50% 50% 50% 0;
+  width:21px;
+  height:20px;
+  background-color: #052fb9;
+  left:-0.26px;
+}
+
+.right-side:after {
+  height:0;
+  width:0;
+  border-bottom:10px solid transparent;
+  border-left: 15px solid #1107d1;
+  top:19px;
+  left:-0.26px;
+}
+
+@keyframes move {
+  0%, 100% {transform: rotateY(0);}
+  50% {transform: rotateY(-45deg);}
+}
+
+.left-side:before, .left-side:after {
+  position: absolute;
+  content:"";
+  transform-origin: right;
+  animation: move 1s ease infinite;
+}
+
+.left-side:before {
+  border-radius:50% 50% 0 50%;
+  width:20px;
+  height:20px;
+  left:-20.7px;
+  background-color: #052fb9;
+}
+
+.left-side:after {
+  height:0;
+  width:0;
+  left:-15px;
+  border-bottom:10px solid transparent;
+  border-right: 15px solid #1107d1;
+  top:19px;
+}
+
+@keyframes up {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-200px);}
+}
+
+@keyframes upTwo {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-450px);}
+}
+
+.text {
+  position: absolute;
+  color: white;
+  font-size:30px;
+  font-family: 'Pacifico', cursive;
+  line-height:1;
+  text-align: center;
+  width:380px;
+  left:10px;
+  z-index:3;
+  top:290px;
+  animation: up 1s ease forwards;
+  transition: .2s;
+}
+
+.hover {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+}
+
+.text:hover span {
+  display: none;
+}
+
+.text:hover:before {
+  content:"Remember not fell lonely your sister is always beside you with parents blessing.";
+  font-size:25px;
+
+}
+
+
+section.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: 1000px;
+  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+  background-position: center center;
+}
+
+.paper {
+  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+
+  
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  
+  position: absolute;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+p {
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(0,0,100);
+  opacity: 0.75;
+  user-select: none;
+  
+   filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+}

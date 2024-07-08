@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap')
+
+
+
+
+body{
+
+    font-family: 'Lora';
+    font-size: 17px;
+    line-height: 1.5;
+    background: #e91e63;
+
+    background-image: url(IMG_20220603_191646.jpg);
+    background-attachment: scroll;
+}
+
+body{
+    font-family: 'Lora';
+     font-size: 25px; 
+    line-height: 1.5;
+   background-repeat: no-repeat;
+   background: radial-gradient(circle at 74.2% 50.9%, rgb(14, 72, 222) 5.2%, rgb(2, 29, 91) 75.3%);  
+     /* background-image: url(b154cc563e.jpg);  */
+    background-attachment: scroll; 
+}
+.box{
+   background: linear-gradient(to right, rgb(0, 82, 212), rgb(67, 100, 247), rgb(111, 177, 252)); */  
+  padding: 60px 60px;
+    color: #191818;
+    width: 50%;
+    text-align: center;
+    margin: 25vh auto;
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+.box h3{
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.top-border:before{
+    content: '';
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    /* background-color: cadetblue; */
+    background-size: cover;
+    top: 20px;
+    left: 20px;
+   
+}
+.top-border:after{
+    content: '';
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    /* background-color: cadetblue; */
+    top: 20px;
+    right: 20px;
+    transform: rotate(90deg);
+}
+
+.box img{
+    width: 100px;
+
+}
+.care{
+    animation: pulse 1s ease infinite;
+    display: inline-block;
+}
+@keyframes pulse{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.5);}
+}
